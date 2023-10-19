@@ -5,6 +5,7 @@
 import { AppState } from "react-native";
 ```
 
+
 ### Listener
 ```
 useEffect(() => {
