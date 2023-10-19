@@ -29,13 +29,13 @@ const onPressImageSetup = async () => {
     // }
 
     let ImagePickerTest = await ImagePicker.openPicker({
-      multiple: true,
-      maxFiles: 10,
-      waitAnimationEnd: false,
-      includeExif: true,
-      forceJpg: true,
-      mediaType: "photo",
-      compressImageQuality: 0.2,
+        multiple: true,
+        maxFiles: 10,
+        waitAnimationEnd: false,
+        includeExif: true,
+        forceJpg: true,
+        mediaType: "photo",
+        compressImageQuality: 0.2,
     })
 
     let imageUri = ImagePickerTest[0]?.sourceURL;
@@ -49,7 +49,7 @@ const onPressImageSetup = async () => {
     console.log('original','size',originalFileSize?.size/1000000,'MB');
     console.log('compressed','size',compressedFileSize?.size/1000000,'MB');
 
-  };
+};
   
-  const fileSize = async (path) => await RNFS.stat(path)
+const fileSize = async (path) => await RNFS.stat(path)
 ```
