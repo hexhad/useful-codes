@@ -20,5 +20,6 @@
 18. config Mac for RN - [OPEN](/configMacRN.md)
 
 
-# One Line Codes
-1. oneLineCodes - [OPEN](/oneLineCodes.md)
+# Others
+1. One Line Codes - [OPEN](/oneLineCodes.md)
+2. Useful Commands - [OPEN](/usefulCommands.md)
