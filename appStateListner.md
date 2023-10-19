@@ -1,4 +1,4 @@
-# APP STATE - React Native
+# ReactNative AppState Listener - React Native
 
 ### import 
 ```
