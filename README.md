@@ -17,6 +17,7 @@
 15. Redux Thunk - [OPEN](/reduxThunk.md)
 16. Redux Thunk Persist - [OPEN](/reduxThunkPersist.md)
 17. Suspense React - [OPEN](/suspenseReact.md)
+18. config Mac for RN - [OPEN](/configMacRN.md)
 
 
 # One Line Codes
