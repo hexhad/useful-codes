@@ -1,3 +1,3 @@
 # useful codes
 
-1. ReactNative appstate listner - ![OPEN](/appStateListner.md)
+1. ReactNative AppState Listener - [OPEN](/appStateListner.md)
