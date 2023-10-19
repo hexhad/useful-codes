@@ -40,6 +40,8 @@ const goBack = () => {
   }
 };
 
+// [{ name: ScreenNames.ONBOARDING_SCREEN }]
+
 const restStack = (routes) => {
   if (navigationRef.isReady()) {
     const resetAction = CommonActions.reset({
@@ -63,7 +65,16 @@ export const RootNavigation = {
 ```
 ## Usage 
 ```
+// Navigation
 RootNavigation.navigate('SCREEN_NAME',{
   ...props
 })
+
+// Go Back
+RootNavigation.pop()
+
+// Rest Stack
+RootNavigation.restStack([
+  { name: SCREEN_NAME },
+]);
 ```
