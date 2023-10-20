@@ -1,7 +1,7 @@
 ## Navigation - React Native
 
 ## Run
-```
+```shell
 yarn add 
 ```
 ## Constants

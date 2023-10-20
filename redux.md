@@ -1,7 +1,7 @@
 # Redux - React Native
 
 ## Run
-```
+```shell
 yarn add redux react-redux
 ```
 ## types.js

@@ -8,7 +8,7 @@ export PATH=$PATH:/Applications/WebStorm.app/Contents/MacOS
 ```
 
 ## then run
-```
+```shell
 source .zshrc
 ```
 

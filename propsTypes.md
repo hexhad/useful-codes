@@ -1,7 +1,7 @@
 Props Types - React Native
 
 ## Run
-```
+```shell
 yarn add prop-types
 ```
 ## Sample Code

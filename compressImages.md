@@ -1,7 +1,7 @@
 # Compress Images - React Native
 
 ## Run
-```
+```shell
 yarn add react-native-compressor react-native-fs react-native-image-crop-picker
 ```
 
