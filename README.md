@@ -18,6 +18,7 @@
 16. Redux Thunk Persist - [OPEN](/reduxThunkPersist.md)
 17. Suspense React - [OPEN](/suspenseReact.md)
 18. config Mac for RN - [OPEN](/configMacRN.md)
+19. Load Array by PAGING - [OPEN](/listLoader.md)
 
 
 # Others
