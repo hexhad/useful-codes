@@ -1,7 +1,7 @@
 # ProviderTree - React Native
 
 ## builtProviderTree.js
-```
+```js
 export const buildProvidersTree = (componentWithProps) => {
   return componentWithProps.reduce((AccumulatedComps, [Provider, props = {}]) => ({ children }) => (
     <AccumulatedComps>
@@ -13,7 +13,7 @@ export const buildProvidersTree = (componentWithProps) => {
 
 ## Usage
 
-```
+```js
 const ProviderTree = buildProvidersTree([
   [ThemeProvider],
   [Provider, { store }],

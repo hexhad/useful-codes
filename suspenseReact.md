@@ -1,6 +1,6 @@
 Suspense - React Native
 
-```
+```js
 const MyComponent = React.lazy(async () => {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -20,7 +20,7 @@ const SusWait = () => {
 ```
 
 ## Usage
-```
+```js
 <Suspense fallback={<SusWait/>}>
    <MyComponent/>
 </Suspense>

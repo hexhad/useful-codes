@@ -1,6 +1,6 @@
 # Theme Provider - React Native
 ## ThemeContext.js
-```
+```js
 import { createContext, useContext, useEffect, useState } from "react";
 import { mmkvStorage } from "../redux/persist/storage";
 
@@ -61,14 +61,14 @@ export { ThemeProvider, useTheme };
 
 # Usage
 ## Wrapper
-```
+```js
 <ThemeProvider>
  ...
 </ThemeProvider>
 ```
 
 ## state and toggleFunction
-```
+```js
 const { selectedTheme, toggleState } = useTheme();
 ```
 

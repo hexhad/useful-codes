@@ -1,6 +1,6 @@
 # Accessibility - React Native
 
-```
+```js
 <TouchableOpacity
   onPress={onPressImageSetup}
   accessible={true}

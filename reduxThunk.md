@@ -5,7 +5,7 @@
 yarn add redux react-redux redux-thunk
 ```
 ## types.js
-```
+```js
 export const DUMMY = {
   LOADING:'DUMMY/LOADING',
   SUCCESS:'DUMMY/SUCCESS',
@@ -14,7 +14,7 @@ export const DUMMY = {
 ```
 
 ## mainReducer.js
-```
+```js
 import { DUMMY } from "../types/types";
 
 const initialState = {
@@ -44,11 +44,10 @@ export default (state=initialState,action) => {
     default : return state
   }
 }
-
 ```
 
 ## rootReducer.js
-```
+```js
 import { combineReducers } from "redux";
 import dummyReducer from "./dummyReducer";
 
@@ -57,11 +56,10 @@ const rootReducer=  combineReducers({
 });
 
 export default rootReducer
-
 ```
 
 ## action.js
-```
+```js
 import { DUMMY } from "../types/types";
 import { delay } from "../../utils/common";
 
@@ -82,7 +80,7 @@ export const DummyFunctions = {
 ```
 
 ## store.js
-```
+```js
 import { applyMiddleware, createStore } from "redux";
 import rootReducer from "./reducer";
 import thunk from "redux-thunk";
@@ -95,7 +93,7 @@ export const store = createStore(
 ```
 
 ## Usage
-```
+```js
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 

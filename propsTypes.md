@@ -6,7 +6,7 @@ yarn add prop-types
 ```
 ## Sample Code
 
-```
+```js
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 
@@ -27,6 +27,6 @@ Dummy.propTypes = {
 export default Dummy;
 ```
 ## Usage
-```
+```js
 <Dummy dummyInteger={1} dummyString={'dummyString'}/>
 ```

@@ -1,7 +1,7 @@
 # Custom Loader - React Native
 
 ## ScreenFreezer.js
-```
+```js
 import { ActivityIndicator, Modal, StyleSheet, View } from "react-native";
 import React from "react";
 
@@ -30,6 +30,6 @@ const styles = StyleSheet.create({
 ```
 
 ## Usage
-```
+```js
 <ScreenFreezer visible={ visibilityState }/>
 ```

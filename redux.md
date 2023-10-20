@@ -5,7 +5,7 @@
 yarn add redux react-redux
 ```
 ## types.js
-```
+```js
 export const DUMMY = {
   LOADING:'DUMMY/LOADING',
   SUCCESS:'DUMMY/SUCCESS',
@@ -14,7 +14,7 @@ export const DUMMY = {
 ```
 
 ## mainReducer.js
-```
+```js
 import { DUMMY } from "../types/types";
 
 const initialState = {
@@ -44,11 +44,10 @@ export default (state=initialState,action) => {
     default : return state
   }
 }
-
 ```
 
 ## rootReducer.js
-```
+```js
 import { combineReducers } from "redux";
 import dummyReducer from "./dummyReducer";
 
@@ -61,7 +60,7 @@ export default rootReducer
 ```
 
 ## action.js
-```
+```js
 import { DUMMY } from "../types/types";
 import { delay } from "../../utils/common";
 
@@ -82,7 +81,7 @@ export const DummyFunctions = {
 ```
 
 ## store.js
-```
+```js
 import { createStore } from "redux";
 import rootReducer from "./reducer";
 export const store = createStore(rootReducer, {},);

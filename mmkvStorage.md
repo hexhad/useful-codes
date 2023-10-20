@@ -1,6 +1,6 @@
 # MMKV for Redux-Persist - React Native
 ## Storage.js
-```
+```js
 import { MMKV } from "react-native-mmkv";
 
 const storage = new MMKV();
@@ -21,7 +21,7 @@ export const mmkvStorage = {
 };
 ```
 ## Usage
-```
+```js
 import { mmkvStorage } from "./persist/storage";
 
 const persistConfig = {

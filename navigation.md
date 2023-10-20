@@ -5,7 +5,7 @@
 yarn add 
 ```
 ## Constants
-```
+```js
 export const SCREEN_NAMES = {
   HOME_SCREEN:'HOME_SCREEN',
   EXTRA_SCREEN:'EXTRA_SCREEN',
@@ -15,7 +15,7 @@ export const SCREEN_NAMES = {
 }
 ```
 ## Stack
-```
+```js
 import { createStackNavigator } from "@react-navigation/stack";
 import BottomNavigation from "./BottomNavigation";
 import { SCREEN_NAMES } from "../../utils/constants";
@@ -42,7 +42,7 @@ export default () => {
 ```
 
 ## Bottom Navigation
-```
+```js
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Bookmark, Coffee, Hexagon } from "react-native-feather";
 import { SCREEN_NAMES } from "../../utils/constants";
@@ -106,5 +106,4 @@ export default () => {
     </Tab.Navigator>
   );
 }
-
 ```

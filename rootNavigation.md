@@ -1,7 +1,7 @@
 ## Root Navigation - React Native
 
 ## Navigation
-```
+```js
 import { navigationRef as ref } from "./navigation/RootNavigation";
 
 <NavigationContainer ref={ref}>
@@ -9,7 +9,7 @@ import { navigationRef as ref } from "./navigation/RootNavigation";
 </NavigationContainer>
 ```
 ## RootNavigation.js
-```
+```js
 import { CommonActions, createNavigationContainerRef, StackActions } from "@react-navigation/native";
 
 export const navigationRef = createNavigationContainerRef();
@@ -64,7 +64,7 @@ export const RootNavigation = {
 };
 ```
 ## Usage 
-```
+```js
 // Navigation
 RootNavigation.navigate('SCREEN_NAME',{
   ...props

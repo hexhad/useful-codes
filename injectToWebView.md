@@ -1,6 +1,6 @@
 # Inject to WebView - React Native
 
-```
+```js
 const ref = useRef();
 
 const run = `document.body.style.backgroundColor = 'blue'; true;`;

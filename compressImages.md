@@ -6,7 +6,7 @@ yarn add react-native-compressor react-native-fs react-native-image-crop-picker
 ```
 
 ## Code
-```
+```js
 const onPressImageSetup = async () => {
     // const options = {
     //   mediaType: 'photo',
