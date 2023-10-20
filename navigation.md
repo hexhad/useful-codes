@@ -2,7 +2,27 @@
 
 ## Run
 ```shell
-yarn add 
+ yarn add @react-navigation/native react-native-screens react-native-safe-area-context @react-navigation/stack react-native-gesture-handler @react-native-masked-view/masked-view @react-navigation/bottom-tabs
+```
+>android/app/src/main/java/<your package name>/MainActivity.java.
+```javascript
+import android.os.Bundle;
+
+public class MainActivity extends ReactActivity {
+  // ...
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
+  }
+  // ...
+}
+```
+# index.js
+```js
+import 'react-native-gesture-handler';
+```
+```shell
+cd ios && pod install && cd ..
 ```
 ## Constants
 ```js
