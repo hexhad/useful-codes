@@ -19,6 +19,7 @@
 17. Suspense React - [OPEN](/suspenseReact.md)
 18. config Mac for RN - [OPEN](/configMacRN.md)
 19. Load Array by PAGING - [OPEN](/listLoader.md)
+20. Axios - [OPEN](/axios.md)
 
 
 # Others
