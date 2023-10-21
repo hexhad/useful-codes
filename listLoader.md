@@ -57,72 +57,77 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case TYPES.LOAD:
-      return {
-        ...state,
-        list: {
-          ...state.list,
-          loading: true,
-        },
+      case TYPES.LOAD:
+          return {
+              ...state,
+              list: {
+                  ...state.list,
+                  loading: true,
+                  error: null,
+              },
 
-      };
-    case TYPES.REFRESH:
-      return {
-        ...state,
-        list: {
-          ...state.list,
-          refreshing: true,
-        },
+          };
+      case TYPES.REFRESH:
+          return {
+              ...state,
+              list: {
+                  ...state.list,
+                  refreshing: true,
+                  error: null,
+              },
 
-      };
-    case TYPES.LOAD_MORE:
-      return {
-        ...state,
-        list: {
-          ...state.list,
-          loadMore: true,
-        },
-      };
-    case TYPES.SUCCESS:
-      return {
-        ...state,
-        list: {
-          ...state.list,
-          loading: false,
-          refreshing: false,
-          data: action.payload.data,
-          currentPage:action.payload.currentPage,
-          totalPages:action.payload.totalPages,
-        },
-      };
-    case TYPES.LOAD_MORE_SUCCESS:
-      return {
-        ...state,
-        list: {
-          ...state.list,
-          loadMore: false,
-          data: [
-            ...state.list.data,
-            ...action.payload.data,
-          ],
-          currentPage:action.payload.currentPage,
-          totalPages:action.payload.totalPages,
-        },
-      };
-    case TYPES.FAILED:
-      return {
-        ...state,
-        list: {
-          ...state.list,
-          error: action.payload,
-          loading: false,
-          refreshing: false,
-          loadMore: false,
-        },
-      };
+          };
+      case TYPES.LOAD_MORE:
+          return {
+              ...state,
+              list: {
+                  ...state.list,
+                  loadMore: true,
+                  error: null,
+              },
+          };
+      case TYPES.SUCCESS:
+          return {
+              ...state,
+              list: {
+                  ...state.list,
+                  loading: false,
+                  refreshing: false,
+                  data: action.payload.data,
+                  currentPage: action.payload.currentPage,
+                  totalPages: action.payload.totalPages,
+                  error: null,
+              },
+          };
+      case TYPES.LOAD_MORE_SUCCESS:
+          return {
+              ...state,
+              list: {
+                  ...state.list,
+                  loadMore: false,
+                  data: [
+                      ...state.list.data,
+                      ...action.payload.data,
+                  ],
+                  currentPage: action.payload.currentPage,
+                  totalPages: action.payload.totalPages,
+                  error: null,
+              },
+          };
+      case TYPES.FAILED:
+          return {
+              ...state,
+              list: {
+                  ...state.list,
+                  error: action.payload,
+                  loading: false,
+                  refreshing: false,
+                  loadMore: false,
+              },
+          };
 
-    default :
-      return state;
+      default :
+          return state;
   }
 }
 ```
@@ -143,13 +148,16 @@ export default ({
                   loadMore = false,
                 }) => {
 
-  const renderItem = ({ item }) => {
-    return (
-      <View>
-        <Text style={{ color: "black" }}>{item}</Text>
-      </View>
-    );
-  };
+    const renderItem = ({ item }) => {
+        return (
+            <View>
+                {valuesToExtract?.map((val)=>(
+                    <Text style={{ color: "black" }}>{item[val]}</Text>
+                ))}
+            </View>
+        );
+    };
+    
   const itemSeparator = () => (
     <View
       style={{
@@ -240,6 +248,7 @@ export default connect((state) => ({
         lastPage={totalPages}
         currentPage={currentPage}
         loadMore={loadMore}
+        valuesToExtract={['name','city']}
       />
     </SafeAreaView>
   );
