@@ -49,7 +49,7 @@ const handleThrottle = throttle((e)=>{
 return (
     <SafeAreaView>
         <View>
-            <TextInput onChangeText={handleThrottle} placeholder={'debounce'}/>
+            <TextInput onChangeText={handleThrottle} placeholder={'throttle'}/>
         </View>
     </SafeAreaView>
 );
