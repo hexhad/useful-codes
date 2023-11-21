@@ -20,6 +20,7 @@
 18. config Mac for RN - [OPEN](/configMacRN.md)
 19. Load Array by PAGING - [OPEN](/listLoader.md)
 20. Axios - [OPEN](/axios.md)
+21. Debounce and Throttle - [OPEN](/debounceAndThrottle.md)
 
 
 # Others
