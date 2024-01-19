@@ -26,3 +26,5 @@
 # Others
 1. One Line Codes - [OPEN](/oneLineCodes.md)
 2. Useful Commands - [OPEN](/usefulCommands.md)
+
+Made with ❤️ By hexhad
